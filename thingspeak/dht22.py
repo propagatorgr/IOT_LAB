@@ -10,7 +10,7 @@ import RPi.GPIO as GPIO
 from time import sleep 
 import Adafruit_DHT 
 import urllib2 
-myAPI = "JTLRCSYY7VMPNFDZ" 
+myAPI = "your api key here" 
 def getSensorData(): 
    RH, T = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 18) 
    return (str(RH), str(T)) 
